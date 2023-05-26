@@ -1,4 +1,4 @@
-token = "1231251"
-[salloc]
+token = "1231251" # the authentication token for the notebook
+[salloc] # salloc args
 time = "01:00:00"
-# gres="gpu:1"
+gres = "gpu:1"
