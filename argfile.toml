@@ -1,0 +1,4 @@
+token = "1231251"
+[salloc]
+time = "01:00:00"
+# gres="gpu:1"
