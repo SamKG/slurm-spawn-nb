@@ -6,6 +6,7 @@ Setting up and running jupyter notebooks in slurm is tedious and finnicky. It in
 2) running jupyter-notebook on the node
 3) ssh forwarding to the login node (so you can actually use it if the node is airgapped)
 4) using the authentication token to log in to the notebook
+5) On some clusters (e.g. Princeton's `della` cluster), running jupyter-notebooks on login nodes is forbidden. In practice, this means that any jobs which have the name "jupyter-notebook" in them are automatically killed. To bypass this, we use the [runb.sh](runb.sh) script so that the script can't catch it.
 
 This program automates all of that, while letting you easily configure your slurm job.
 
